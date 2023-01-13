@@ -25,7 +25,7 @@ export async function getPrices() {
 
     await browser.close();
 
-    const sortedNotebooks = notebooks.sort((a, b) => b.price - a.price);
+    const sortedNotebooks = notebooks.sort((a, b) => a.price - b.price);
     return sortedNotebooks
 }
 
